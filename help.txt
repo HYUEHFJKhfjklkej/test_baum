@@ -1,0 +1,10 @@
+docker build -t server .
+docker run -it server
+g++ -std=c++17 server.cc внутри контейнера уже выполнено 
+docker exec -it server bash укажите id контейнера
+nc localhost 8080
+
+seq1 1 2
+seq2 2 3
+seq3 3 4
+export seq
